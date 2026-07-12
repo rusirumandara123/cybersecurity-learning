@@ -1,28 +1,22 @@
 # Nmap
 
-This module contains everything I learned while studying Nmap.
+Nmap is the first tool I'm learning as part of this cybersecurity repository.
 
-The content is organized as I progressed through each lesson, combining theory, practical exercises, and revision material in one place.
+The goal of this module isn't just to learn commands. It's to understand how Nmap works, when to use different scan types, and how to interpret the results during practical exercises.
 
-Rather than keeping separate notes for commands, labs, and interview preparation, everything is grouped into dedicated files for easier review.
+Everything in this folder is organized while studying the tool, making it easier to review topics later without searching through scattered notes.
 
-## Module Contents
+---
 
-| File | Purpose |
-|------|---------|
-| Notes.md | Concepts learned during each lesson |
-| Commands.md | Commands practiced with examples |
-| Labs.md | Practical exercises and observations |
-| CheatSheet.md | Quick revision notes |
-| Interview.md | Common interview questions and answers |
-| Quiz.md | Self-assessment questions |
-| References.md | Official documentation and learning resources |
+## What This Module Covers
 
-## Topics Covered
+This module will grow as I continue learning Nmap.
 
-The module will gradually cover topics including:
+Current topics include:
 
 - Installing and verifying Nmap
+- Hosts, ports, and services
+- Default scanning
 - Host discovery
 - Target selection
 - Port scanning
@@ -31,39 +25,85 @@ The module will gradually cover topics including:
 - Aggressive scanning
 - TCP Connect Scan
 - SYN Scan
-- UDP Scan
+
+Future topics will include:
+
+- UDP scanning
 - NSE (Nmap Scripting Engine)
 - Firewall evasion
+- Timing templates
 - Output formats
-- Performance tuning
 - Real-world scanning techniques
 
-New topics will be added as I continue learning.
+---
+
+## Files
+
+| File | Description |
+|------|-------------|
+| **Notes.md** | Topic-based notes collected while learning Nmap. |
+| **Commands.md** | Commands with examples, explanations, and usage notes. |
+| **Labs.md** | Practical exercises, observations, and lab results. |
+| **CheatSheet.md** | Quick reference for common commands and options. |
+| **Interview.md** | Questions and answers for interview preparation. |
+| **Quiz.md** | Revision questions to test understanding. |
+| **References.md** | Official documentation, books, and useful learning resources. |
+
+---
+
+## Learning Approach
+
+For each topic, I follow the same process:
+
+1. Learn the concept.
+2. Practice the command.
+3. Observe the output.
+4. Understand why it works.
+5. Record important notes.
+6. Review using the cheat sheet and quiz.
+
+Keeping the same workflow for every topic helps build understanding instead of memorizing commands.
+
+---
 
 ## Progress
 
-| Lesson | Status |
-|---------|:------:|
-| Day 1 | ✅ |
-| Day 2 | ✅ |
-| Day 3 | ✅ |
-| Day 4 | ✅ |
-| Day 5 | ✅ |
-| Day 6 | ✅ |
-| Day 7 | ✅ |
-| Day 8 | ✅ |
-| Day 9 | ✅ |
-| Day 10+ | ⏳ |
+| Topic | Status |
+|------|:------:|
+| Introduction | ✅ |
+| Hosts, Ports & Services | ✅ |
+| Default Scan | ✅ |
+| Host Discovery | ✅ |
+| Target Selection | ✅ |
+| Port Scanning | ✅ |
+| Service Version Detection | ✅ |
+| Operating System Detection | ✅ |
+| Aggressive Scan | ✅ |
+| TCP Connect vs SYN Scan | ✅ |
+| UDP Scan | ⏳ |
+| NSE Scripts | ⏳ |
+| Firewall Evasion | ⏳ |
+| Output Formats | ⏳ |
+
+---
 
 ## Practice Environment
 
-Commands and labs in this module are practiced only in authorized environments such as:
+The commands in this module are intended for practice in environments where testing is authorized, including:
 
 - Personal virtual machines
-- Training platforms
+- Local lab networks
 - Official practice targets
-- Local lab environments
+- Cybersecurity training platforms
 
-## Notes
+---
 
-This module is updated as new lessons are completed. Existing files may also be refined whenever I find a better explanation or a clearer example during practice.
+## Module Goal
+
+By the end of this module, I should be comfortable with:
+
+- Selecting the right scan for different situations.
+- Understanding scan results.
+- Identifying common services.
+- Detecting operating systems and service versions.
+- Using Nmap as a foundation for later penetration testing tools.
