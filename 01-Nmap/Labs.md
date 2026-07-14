@@ -283,3 +283,75 @@ After completing these labs, I can:
 - Estimate operating systems
 - Perform Aggressive Scans
 - Understand the difference between TCP Connect Scan and SYN Scan
+
+---
+
+# Lab 12 - UDP Scan
+
+## Objective
+
+Discover UDP services running on the target.
+
+### Command
+
+```bash
+sudo nmap -sU scanme.nmap.org
+```
+
+### Observation
+
+Output included:
+
+- 7/udp open|filtered echo
+- 19/udp open|filtered chargen
+- 68/udp open|filtered dhcpc
+- 123/udp open ntp
+- 5060/udp open|filtered sip
+
+### Key Takeaway
+
+UDP scans often report **open|filtered** because many UDP services do not respond to scan probes.
+
+---
+
+# Lab 13 - Scan UDP Port 53
+
+## Objective
+
+Check whether DNS is available.
+
+### Command
+
+```bash
+sudo nmap -sU -p 53 scanme.nmap.org
+```
+
+### Observation
+
+Port was reported as **closed**.
+
+### Key Takeaway
+
+A closed UDP port usually means the host responded that no service is listening on that port.
+
+---
+
+# Lab 14 - Fast UDP Scan
+
+## Objective
+
+Compare scan speed using Fast Scan.
+
+### Command
+
+```bash
+sudo nmap -sU -F scanme.nmap.org
+```
+
+### Observation
+
+The scan completed faster because only common UDP ports were checked.
+
+### Key Takeaway
+
+Fast Scan is useful when a quick overview is needed.
