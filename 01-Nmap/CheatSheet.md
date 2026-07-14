@@ -112,3 +112,43 @@ sudo nmap -sS target
 ```
 
 Performs a Half-Open (Stealth) Scan.
+
+---
+
+## UDP Scan
+
+```bash
+sudo nmap -sU target
+```
+
+Scan common UDP ports.
+
+---
+
+## Scan UDP Port 53
+
+```bash
+sudo nmap -sU -p 53 target
+```
+
+Scan DNS service.
+
+---
+
+## Fast UDP Scan
+
+```bash
+sudo nmap -sU -F target
+```
+
+Scan common UDP ports quickly.
+
+---
+
+## Multiple UDP Ports
+
+```bash
+sudo nmap -sU -p 53,123,161 target
+```
+
+Scan DNS, NTP and SNMP.
