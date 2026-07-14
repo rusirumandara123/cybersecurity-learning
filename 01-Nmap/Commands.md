@@ -300,3 +300,53 @@ General reconnaissance.
 | Aggressive Scan | `sudo nmap -A scanme.nmap.org` |
 | TCP Connect Scan | `nmap -sT scanme.nmap.org` |
 | SYN Scan | `sudo nmap -sS scanme.nmap.org` |
+
+---
+
+# UDP Scan
+
+## Scan Common UDP Ports
+
+```bash
+sudo nmap -sU scanme.nmap.org
+```
+
+**Purpose**
+
+Scans common UDP ports on the target.
+
+---
+
+## Scan a Specific UDP Port
+
+```bash
+sudo nmap -sU -p 53 scanme.nmap.org
+```
+
+**Purpose**
+
+Scans only UDP Port 53.
+
+---
+
+## Fast UDP Scan
+
+```bash
+sudo nmap -sU -F scanme.nmap.org
+```
+
+**Purpose**
+
+Scans only the most common UDP ports.
+
+---
+
+## Scan Multiple UDP Ports
+
+```bash
+sudo nmap -sU -p 53,123,161 scanme.nmap.org
+```
+
+**Purpose**
+
+Scans multiple UDP services in one command.
