@@ -88,3 +88,47 @@ Write the command to:
 - Detect the operating system.
 - Perform an Aggressive Scan.
 - Perform a SYN Scan.
+
+---
+
+## Day 10 Quiz
+
+### 1. Which option performs a UDP scan?
+
+A. -sS
+
+B. -sT
+
+C. -sU
+
+D. -sV
+
+Answer: C
+
+---
+
+### 2. Which UDP port is used by DNS?
+
+Answer: 53
+
+---
+
+### 3. Which UDP port is used by NTP?
+
+Answer: 123
+
+---
+
+### 4. What does open|filtered indicate?
+
+Answer:
+
+Nmap cannot determine whether the port is open or filtered.
+
+---
+
+### 5. Why are UDP scans generally slower than TCP scans?
+
+Answer:
+
+Because many UDP services do not respond, forcing Nmap to wait for timeouts.
