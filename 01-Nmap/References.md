@@ -30,3 +30,11 @@
 ## Notes
 
 Always practice only on systems that you own or have permission to test.
+
+---
+
+## Additional Reading
+
+- Nmap Network Scanning – Chapter: UDP Scanning
+- Nmap Official Documentation
+- RFC 768 – User Datagram Protocol (UDP)
