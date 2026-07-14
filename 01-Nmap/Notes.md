@@ -515,3 +515,71 @@ After completing these topics, the following concepts should be familiar:
 - SYN Scan
 
 These concepts form the foundation for more advanced Nmap topics such as UDP Scanning, NSE Scripts, Firewall Evasion, Timing Templates, and Output Formats.
+
+---
+
+# UDP Scanning
+
+## Overview
+
+UDP (User Datagram Protocol) is a connectionless protocol used at the Transport Layer (Layer 4). Unlike TCP, UDP does not establish a connection before sending data, making it faster but less reliable.
+
+UDP is commonly used by services that require speed over guaranteed delivery.
+
+Examples include:
+
+- DNS
+- DHCP
+- NTP
+- SNMP
+- SIP
+
+---
+
+## Why Perform UDP Scans?
+
+A TCP scan only discovers TCP services.
+
+Many important services run over UDP, so a separate UDP scan is required during reconnaissance.
+
+Without UDP scanning, services such as DNS, NTP, and SNMP may be missed.
+
+---
+
+## UDP Port States
+
+During a UDP scan, Nmap may report:
+
+- open
+- closed
+- filtered
+- open|filtered
+
+The **open|filtered** state appears when Nmap cannot determine whether the port is open or blocked because no response was received.
+
+---
+
+## Key Points
+
+- UDP is connectionless.
+- UDP does not use the TCP Three-Way Handshake.
+- UDP scanning is generally slower than TCP scanning.
+- Root privileges are usually required for UDP scans.
+- Professional reconnaissance should include both TCP and UDP scanning.
+
+---
+
+## Things Worth Remembering
+
+- DNS commonly uses UDP Port 53.
+- NTP commonly uses UDP Port 123.
+- SNMP commonly uses UDP Port 161.
+- SIP commonly uses UDP Port 5060.
+
+---
+
+## Common Mistake
+
+Do not assume **open|filtered** means the port is definitely open.
+
+It simply means Nmap could not determine the exact state because no response was received.
