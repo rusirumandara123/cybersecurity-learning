@@ -70,3 +70,36 @@ A Half-Open Scan that does not complete the TCP connection.
 ### 10. Why does SYN Scan usually require sudo?
 
 Because it sends raw packets, which require elevated privileges.
+
+---
+
+## What is UDP?
+
+UDP (User Datagram Protocol) is a connectionless transport layer protocol designed for fast communication.
+
+---
+
+## Why is UDP scanning slower than TCP scanning?
+
+UDP services often do not respond, so Nmap waits for timeouts before determining the port state.
+
+---
+
+## What does open|filtered mean?
+
+Nmap cannot determine whether the port is open or filtered because no response was received.
+
+---
+
+## Why does UDP scanning usually require sudo?
+
+UDP scanning uses raw packets, which require root privileges on Linux systems.
+
+---
+
+## Name four common UDP services.
+
+- DNS (53)
+- DHCP (67/68)
+- NTP (123)
+- SNMP (161)
