@@ -38,3 +38,10 @@ Always practice only on systems that you own or have permission to test.
 - Nmap Network Scanning – Chapter: UDP Scanning
 - Nmap Official Documentation
 - RFC 768 – User Datagram Protocol (UDP)
+
+  ---
+
+- Nmap Official Documentation
+- NSE Documentation
+- Lua Programming Language
+- Nmap Script Categories
