@@ -583,3 +583,36 @@ The **open|filtered** state appears when Nmap cannot determine whether the port 
 Do not assume **open|filtered** means the port is definitely open.
 
 It simply means Nmap could not determine the exact state because no response was received.
+
+---
+
+# Nmap Scripting Engine (NSE)
+
+## Overview
+
+NSE (Nmap Scripting Engine) extends Nmap by allowing scripts to perform additional information gathering, enumeration, and security checks.
+
+Unlike a normal scan, NSE can collect details such as HTTP titles, SSH host keys, supported methods, SSL information, and even detect known vulnerabilities.
+
+## Key Points
+
+- NSE stands for Nmap Scripting Engine.
+- NSE scripts are written in Lua.
+- Scripts are usually stored in `/usr/share/nmap/scripts/`.
+- `-sC` runs the default NSE scripts.
+- `--script=<script-name>` runs a specific NSE script.
+
+## Common Categories
+
+- default
+- safe
+- vuln
+- auth
+- brute
+- discovery
+
+## Things Worth Remembering
+
+- `-sV` = Service Version Detection.
+- `-sC` = Default NSE Scripts.
+- NSE is mainly used for enumeration and information gathering.
