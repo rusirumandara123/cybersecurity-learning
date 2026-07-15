@@ -152,3 +152,19 @@ sudo nmap -sU -p 53,123,161 target
 ```
 
 Scan DNS, NTP and SNMP.
+---
+
+nmap -sC target
+Run default NSE scripts.
+
+nmap --script=http-title target
+Run HTTP title script.
+
+nmap --script=http-title,http-headers target
+Run multiple scripts.
+
+ls /usr/share/nmap/scripts/ | grep http
+List HTTP-related NSE scripts.
+
+sudo nmap --script-updatedb
+Update NSE database.
