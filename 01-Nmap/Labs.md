@@ -355,3 +355,32 @@ The scan completed faster because only common UDP ports were checked.
 ### Key Takeaway
 
 Fast Scan is useful when a quick overview is needed.
+---
+
+# Lab 15 - Default NSE Scripts
+
+Command:
+nmap -sC scanme.nmap.org
+
+Observation:
+Collected HTTP title, SSH host key, and favicon information.
+
+---
+
+# Lab 16 - HTTP Title Script
+
+Command:
+nmap --script=http-title scanme.nmap.org
+
+Observation:
+Website title: Go ahead and ScanMe!
+
+---
+
+# Lab 17 - Search HTTP Scripts
+
+Command:
+ls /usr/share/nmap/scripts/ | grep http
+
+Observation:
+138 HTTP-related NSE scripts were available.
