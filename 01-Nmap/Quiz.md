@@ -132,3 +132,11 @@ Nmap cannot determine whether the port is open or filtered.
 Answer:
 
 Because many UDP services do not respond, forcing Nmap to wait for timeouts.
+
+---
+
+1. What does NSE stand for?
+2. Which language is used to write NSE scripts?
+3. What does -sC do?
+4. What is the difference between -sV and -sC?
+5. Where are NSE scripts stored in Linux?
