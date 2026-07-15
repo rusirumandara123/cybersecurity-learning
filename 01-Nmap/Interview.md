@@ -103,3 +103,14 @@ UDP scanning uses raw packets, which require root privileges on Linux systems.
 - DHCP (67/68)
 - NTP (123)
 - SNMP (161)
+
+---
+
+Q: What is NSE?
+A: Nmap Scripting Engine used for enumeration and information gathering.
+
+Q: What does -sC do?
+A: Runs the default NSE scripts.
+
+Q: What is the difference between -sV and -sC?
+A: -sV detects service versions, while -sC executes default NSE scripts.
