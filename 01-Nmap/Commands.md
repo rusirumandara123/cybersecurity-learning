@@ -350,3 +350,48 @@ sudo nmap -sU -p 53,123,161 scanme.nmap.org
 **Purpose**
 
 Scans multiple UDP services in one command.
+
+---
+
+# Run Default NSE Scripts
+
+nmap -sC scanme.nmap.org
+
+Purpose:
+Run the default NSE scripts.
+
+---
+
+# Run a Single Script
+
+nmap --script=http-title scanme.nmap.org
+
+Purpose:
+Display the website title.
+
+---
+
+# Run Multiple Scripts
+
+nmap --script=http-title,http-headers scanme.nmap.org
+
+Purpose:
+Run multiple NSE scripts.
+
+---
+
+# Search HTTP Scripts
+
+ls /usr/share/nmap/scripts/ | grep http
+
+Purpose:
+List available HTTP-related NSE scripts.
+
+---
+
+# Update Script Database
+
+sudo nmap --script-updatedb
+
+Purpose:
+Update the NSE script database.
