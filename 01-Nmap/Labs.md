@@ -384,13 +384,20 @@ ls /usr/share/nmap/scripts/ | grep http
 
 Observation:
 138 HTTP-related NSE scripts were available.
+
+---
+
 Lab 18 - Safe Category
 Command:
 nmap --script safe scanme.nmap.org
 
+---
+
 Lab 19 - Vulnerability Category
 Command:
 nmap --script vuln scanme.nmap.org
+
+---
 
 Lab 20 - Multiple Categories
 Command:
