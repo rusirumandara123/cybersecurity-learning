@@ -389,14 +389,109 @@ List available HTTP-related NSE scripts.
 
 ---
 
-# Update Script Database
+# Nmap NSE Commands
 
+---
+
+## Update Script Database
+
+```bash
 sudo nmap --script-updatedb
+```
 
-Purpose:
-Update the NSE script database.
+**Purpose:** Update the NSE script database.
 
-nmap --script safe target  
-nmap --script vuln target 
-nmap --script discovery target 
-nmap --script "default,vuln" target 
+---
+
+## Run Default NSE Scripts
+
+```bash
+nmap -sC target
+```
+
+**Purpose:** Run the default NSE scripts.
+
+---
+
+## Run a Single Script
+
+```bash
+nmap --script=http-title target
+```
+
+**Purpose:** Display the website title.
+
+---
+
+## Run Multiple Scripts
+
+```bash
+nmap --script=http-title,http-headers target
+```
+
+**Purpose:** Run multiple NSE scripts at the same time.
+
+---
+
+## Search Available HTTP Scripts
+
+```bash
+ls /usr/share/nmap/scripts/ | grep http
+```
+
+**Purpose:** List all HTTP-related NSE scripts.
+
+---
+
+## Run Safe Category
+
+```bash
+nmap --script safe target
+```
+
+**Purpose:** Execute all scripts in the **safe** category.
+
+---
+
+## Run Vulnerability Category
+
+```bash
+nmap --script vuln target
+```
+
+**Purpose:** Detect known vulnerabilities on the target.
+
+---
+
+## Run Discovery Category
+
+```bash
+nmap --script discovery target
+```
+
+**Purpose:** Gather additional information about the target.
+
+---
+
+## Run Multiple Categories
+
+```bash
+nmap --script "default,vuln" target
+```
+
+**Purpose:** Run both **default** and **vulnerability** category scripts.
+
+---
+
+## Common Commands Summary
+
+| Command | Description |
+|---------|-------------|
+| `nmap -sC target` | Run default NSE scripts |
+| `nmap --script=http-title target` | Show website title |
+| `nmap --script=http-title,http-headers target` | Run multiple scripts |
+| `nmap --script safe target` | Run safe category scripts |
+| `nmap --script vuln target` | Check for known vulnerabilities |
+| `nmap --script discovery target` | Run discovery scripts |
+| `nmap --script "default,vuln" target` | Run multiple categories |
+| `sudo nmap --script-updatedb` | Update the NSE script database |
