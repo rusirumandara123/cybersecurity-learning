@@ -114,3 +114,63 @@ A: Runs the default NSE scripts.
 
 Q: What is the difference between -sV and -sC?
 A: -sV detects service versions, while -sC executes default NSE scripts.
+
+---
+
+# NSE Categories
+
+## Q1. What are NSE Categories?
+
+**Answer:**
+
+NSE Categories are groups of NSE scripts organized by their purpose, making it easier to run the correct scripts during a scan.
+
+---
+
+## Q2. What is the purpose of the safe category?
+
+**Answer:**
+
+The safe category performs information gathering and enumeration without harming the target.
+
+---
+
+## Q3. What does the vuln category do?
+
+**Answer:**
+
+The vuln category checks for known vulnerabilities but does not exploit the target.
+
+---
+
+## Q4. What is the difference between default and safe?
+
+**Answer:**
+
+- **default** runs the commonly used default NSE scripts.
+- **safe** runs scripts that are considered non-intrusive and safe for information gathering.
+
+---
+
+## Q5. Why should DoS scripts be used carefully?
+
+**Answer:**
+
+Because they may interrupt or crash services if executed against a target.
+
+---
+
+## Q6. What is the purpose of the brute category?
+
+**Answer:**
+
+The brute category attempts to discover valid credentials using multiple username and password combinations.
+
+---
+
+## Interview Tips
+
+- `-sC` = Default Scripts
+- `vuln` = Detect Only (No Exploitation)
+- `auth` = Authentication Checks
+- `brute` = Password Guessing
