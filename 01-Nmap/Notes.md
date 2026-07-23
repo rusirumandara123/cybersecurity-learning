@@ -616,3 +616,19 @@ Unlike a normal scan, NSE can collect details such as HTTP titles, SSH host keys
 - `-sV` = Service Version Detection.
 - `-sC` = Default NSE Scripts.
 - NSE is mainly used for enumeration and information gathering.
+
+  # NSE Categories
+
+## Main Categories
+- default - Commonly used scripts (`-sC`)
+- safe - Safe information gathering scripts
+- vuln - Detects known vulnerabilities
+- discovery - Discovers hosts, services, shares, and users
+- auth - Authentication-related checks
+- brute - Performs brute-force password attempts
+- exploit - Exploit-related scripts
+- dos - Denial-of-Service related scripts
+
+## Important Notes
+- `vuln` detects vulnerabilities but does **not** exploit them.
+- `dos` scripts may affect service availability and require authorization.
