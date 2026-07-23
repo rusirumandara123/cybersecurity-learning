@@ -169,9 +169,58 @@ List HTTP-related NSE scripts.
 sudo nmap --script-updatedb
 Update NSE database.
 
--sC                    -> Default category
---script safe          -> Safe scripts
---script vuln          -> Vulnerability detection
---script discovery     -> Discovery scripts
---script brute         -> Brute-force scripts
---script dos           -> DoS scripts
+---
+
+# NSE Categories
+
+## NSE Categories
+
+| Category | Purpose |
+|----------|---------|
+| default | Run default NSE scripts (`-sC`) |
+| safe | Safe information gathering |
+| vuln | Detect known vulnerabilities |
+| discovery | Discover services and information |
+| auth | Authentication-related checks |
+| brute | Password brute-force attacks |
+| exploit | Exploit-related scripts |
+| dos | Denial of Service testing |
+
+---
+
+## Commands
+
+### Run Safe Category
+
+```bash
+nmap --script safe target
+```
+
+### Run Vulnerability Category
+
+```bash
+nmap --script vuln target
+```
+
+### Run Discovery Category
+
+```bash
+nmap --script discovery target
+```
+
+### Run Multiple Categories
+
+```bash
+nmap --script "default,vuln" target
+```
+
+---
+
+## Remember
+
+- `-sC` = Default Category
+- `safe` = Information Gathering
+- `vuln` = Vulnerability Detection
+- `auth` = Authentication Checks
+- `brute` = Password Guessing
+- `dos` = May affect service availability
