@@ -91,7 +91,7 @@ Write the command to:
 
 ---
 
-## Day 10 Quiz
+## Quiz
 
 ### 1. Which option performs a UDP scan?
 
@@ -140,3 +140,91 @@ Because many UDP services do not respond, forcing Nmap to wait for timeouts.
 3. What does -sC do?
 4. What is the difference between -sV and -sC?
 5. Where are NSE scripts stored in Linux?
+
+---
+
+# NSE Categories Quiz
+
+## Multiple Choice
+
+### 1. Which category is executed by `-sC`?
+
+A. safe
+
+B. vuln
+
+C. default
+
+D. brute
+
+**Answer:** C
+
+---
+
+### 2. Which category detects known vulnerabilities?
+
+A. auth
+
+B. safe
+
+C. vuln
+
+D. exploit
+
+**Answer:** C
+
+---
+
+### 3. Which category performs password brute-force attacks?
+
+A. auth
+
+B. brute
+
+C. discovery
+
+D. safe
+
+**Answer:** B
+
+---
+
+### 4. Which category is generally safe for information gathering?
+
+A. brute
+
+B. dos
+
+C. safe
+
+D. exploit
+
+**Answer:** C
+
+---
+
+### 5. Which category may affect service availability?
+
+A. safe
+
+B. default
+
+C. dos
+
+D. discovery
+
+**Answer:** C
+
+---
+
+## Short Questions
+
+1. What is the purpose of NSE Categories?
+
+2. What is the difference between auth and brute?
+
+3. Does the vuln category exploit the target?
+
+4. Why should DoS scripts be used carefully?
+
+5. Which category is executed by `-sC`?
