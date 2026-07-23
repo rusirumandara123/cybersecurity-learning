@@ -397,6 +397,6 @@ Purpose:
 Update the NSE script database.
 
 nmap --script safe target  
-nmap --script vuln target
-nmap --script discovery target
-nmap --script "default,vuln" target
+nmap --script vuln target 
+nmap --script discovery target 
+nmap --script "default,vuln" target 
