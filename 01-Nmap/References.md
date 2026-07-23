@@ -45,3 +45,33 @@ Always practice only on systems that you own or have permission to test.
 - NSE Documentation
 - Lua Programming Language
 - Nmap Script Categories
+
+  ---
+
+## Official Documentation
+
+- https://nmap.org/book/nse.html
+- https://nmap.org/book/nse-usage.html
+- https://nmap.org/nsedoc/
+
+---
+
+## Additional Reading
+
+- https://nmap.org/book/man.html
+- https://www.lua.org/docs.html
+
+---
+
+## Practice Labs
+
+- scanme.nmap.org
+- Metasploitable 2
+- TryHackMe
+- Hack The Box
+
+---
+
+## Important Note
+
+Always perform NSE scans only on systems you own or have explicit permission to test.
