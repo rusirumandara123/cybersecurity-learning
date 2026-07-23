@@ -355,50 +355,137 @@ The scan completed faster because only common UDP ports were checked.
 ### Key Takeaway
 
 Fast Scan is useful when a quick overview is needed.
+
 ---
 
-# Lab 15 - Default NSE Scripts
+# Nmap NSE Labs
 
-Command:
+---
+
+# Lab 15 - Run Default NSE Scripts
+
+## Objective
+Run the default NSE scripts and observe the additional information returned.
+
+## Command
+
+```bash
 nmap -sC scanme.nmap.org
+```
 
-Observation:
-Collected HTTP title, SSH host key, and favicon information.
+## Expected Output
+
+- HTTP Title
+- SSH Host Key
+- HTTP Methods
+- Additional NSE Script Information
+
+## Observation
+
+Default NSE scripts provide much more information than a normal Nmap scan.
 
 ---
 
-# Lab 16 - HTTP Title Script
+# Lab 16 - Run a Single NSE Script
 
-Command:
+## Objective
+Run only the HTTP Title script.
+
+## Command
+
+```bash
 nmap --script=http-title scanme.nmap.org
+```
 
-Observation:
-Website title: Go ahead and ScanMe!
+## Expected Output
+
+```text
+PORT   STATE SERVICE
+80/tcp open  http
+
+|_http-title: Go ahead and ScanMe!
+```
+
+## Observation
+
+The script returns only the web page title.
 
 ---
 
-# Lab 17 - Search HTTP Scripts
+# Lab 17 - List HTTP NSE Scripts
 
-Command:
+## Objective
+Display all HTTP-related NSE scripts installed on the system.
+
+## Command
+
+```bash
 ls /usr/share/nmap/scripts/ | grep http
+```
 
-Observation:
-138 HTTP-related NSE scripts were available.
+## Expected Output
+
+A list of HTTP-related NSE scripts.
+
+Example:
+
+- http-title.nse
+- http-methods.nse
+- http-auth.nse
+- http-enum.nse
+- http-headers.nse
+
+## Observation
+
+Your system may contain over 100 HTTP-related NSE scripts depending on the installed Nmap version.
 
 ---
 
-Lab 18 - Safe Category
-Command:
+# Lab 18 - Run Safe Category
+
+## Objective
+Run all scripts in the **safe** category.
+
+## Command
+
+```bash
 nmap --script safe scanme.nmap.org
+```
+
+## Observation
+
+Collects information safely without affecting the target.
 
 ---
 
-Lab 19 - Vulnerability Category
-Command:
+# Lab 19 - Run Vulnerability Category
+
+## Objective
+Check the target for known vulnerabilities.
+
+## Command
+
+```bash
 nmap --script vuln scanme.nmap.org
+```
+
+## Observation
+
+Checks for known vulnerabilities but does **not** exploit the target.
 
 ---
 
-Lab 20 - Multiple Categories
-Command:
+# Lab 20 - Run Multiple Categories
+
+## Objective
+Run both the **default** and **vuln** categories together.
+
+## Command
+
+```bash
 nmap --script "default,vuln" scanme.nmap.org
+```
+
+## Observation
+
+Runs multiple categories in a single scan and provides more comprehensive results.
