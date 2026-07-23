@@ -168,3 +168,10 @@ List HTTP-related NSE scripts.
 
 sudo nmap --script-updatedb
 Update NSE database.
+
+-sC                    -> Default category
+--script safe          -> Safe scripts
+--script vuln          -> Vulnerability detection
+--script discovery     -> Discovery scripts
+--script brute         -> Brute-force scripts
+--script dos           -> DoS scripts
